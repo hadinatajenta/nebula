@@ -21,7 +21,7 @@
 
                 </div>
 
-                <button type="submit"
+                <button type="submit" @click="login"
                     class="w-full rounded-md bg-[#0072db] py-2 font-medium text-white transition hover:bg-[#0059b3]">
                     Login
                 </button>
@@ -36,9 +36,13 @@
 
 <script setup>
 import { AtSymbolIcon, LockClosedIcon } from '@heroicons/vue/24/solid'
+import axios from 'axios';
 import { computed, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const email = ref('');
+const router = useRouter()
+const errorMsg = ref('')
 const emailError = computed(() => {
     if (!email.value) {
         return 'Email is required';
@@ -48,6 +52,10 @@ const emailError = computed(() => {
         return '';
     }
 })
+
+const login = () => {
+    router.push('/dashboard')
+}
 </script>
 
 <style scoped></style>

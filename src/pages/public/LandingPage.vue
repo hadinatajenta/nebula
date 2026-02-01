@@ -10,10 +10,10 @@
 </template>
 
 <script setup>
-import AppHeader from '../components/organisms/AppHeader.vue'
-import HeroSection from '../components/organisms/HeroSection.vue'
-import FeaturesSection from '../components/organisms/FeaturesSection.vue'
-import AppFooter from '../components/organisms/AppFooter.vue'
+import AppHeader from '../../components/organisms/AppHeader.vue'
+import HeroSection from '../../components/organisms/HeroSection.vue'
+import FeaturesSection from '../../components/organisms/FeaturesSection.vue'
+import AppFooter from '../../components/organisms/AppFooter.vue'
 </script>
 
 <style scoped>
