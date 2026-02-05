@@ -19,8 +19,7 @@
                 </div>
             </div>
 
-            <!-- Grouped List -->
-            <!-- Desktop -->
+
             <div class="hidden md:block">
                 <div class="overflow-x-auto bg-white border rounded-xl">
                     <table class="w-full text-sm">

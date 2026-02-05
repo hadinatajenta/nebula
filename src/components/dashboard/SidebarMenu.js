@@ -1,9 +1,26 @@
 export const sidebarMenu = [
     {
-        label: 'Posts',
+        label: 'Dashboard',
         to: '/dashboard',
         icon: 'LayoutDashboard',
-        badge: null
+        badge: null,
+        children: [
+            {
+                label: 'Posts',
+                to: '/dashboard/posts',
+                icon: 'FileText'
+            },
+            {
+                label: 'Categories',
+                to: '/dashboard/categories',
+                icon: 'Folder'
+            },
+            {
+                label: 'Stats',
+                to: '/dashboard/stats',
+                icon: 'BarChart'
+            }
+        ]
     },
     {
         label: 'Users',

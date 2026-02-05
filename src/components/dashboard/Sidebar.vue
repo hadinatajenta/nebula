@@ -17,6 +17,7 @@
                 class="absolute inset-0 bg-gradient-to-br from-[#faf8f5]/50 via-white/30 to-[#faf8f5]/50 pointer-events-none">
             </div>
 
+
             <div class="relative z-10 flex items-center justify-between p-6 border-b border-[#f0ede8]">
                 <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-3">
@@ -42,7 +43,7 @@
             <nav
                 class="flex-1 py-2 overflow-y-auto overflow-x-hidden relative z-10 scrollbar-thin scrollbar-track-gray-50 scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400">
                 <Menu v-for="menu in menus" :key="menu.to" :to="menu.to" :label="menu.label" :icon="menu.icon"
-                    :badge="menu.badge" :collapsed="isCollapsed" />
+                    :badge="menu.badge" :collapsed="isCollapsed" :children="menu.children" />
             </nav>
         </aside>
     </div>
@@ -50,7 +51,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
-import { Star, ChevronLeft, User } from 'lucide-vue-next'
+import { ChevronLeft } from 'lucide-vue-next'
 import Menu from './Menu.vue'
 import { sidebarMenu } from './SidebarMenu'
 
@@ -72,7 +73,6 @@ const toggleSidebar = () => {
 const handleResize = () => {
     windowWidth.value = window.innerWidth
 
-    // Auto-close mobile menu when resizing to desktop
     if (!isMobile.value) {
         isOpen.value = false
     }
@@ -81,7 +81,6 @@ const handleResize = () => {
 onMounted(() => {
     window.addEventListener('resize', handleResize)
 
-    // Set initial state based on screen size
     if (isMobile.value) {
         isOpen.value = false
     }
@@ -91,7 +90,6 @@ onUnmounted(() => {
     window.removeEventListener('resize', handleResize)
 })
 
-// Expose toggle function for parent components
 defineExpose({
     toggleSidebar,
     isCollapsed,
