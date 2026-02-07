@@ -1,7 +1,6 @@
 <template>
     <DashboardLayouts>
         <div class="space-y-6">
-            <!-- Header -->
             <div class="flex items-center justify-between">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-800">Posts</h1>
@@ -13,7 +12,6 @@
                 </router-link>
             </div>
 
-            <!-- Stats Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
@@ -40,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Posts Table -->
             <div
                 class="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] overflow-hidden">
                 <div class="p-6 border-b border-gray-100">

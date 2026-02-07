@@ -1,21 +1,17 @@
 <template>
     <DashboardLayouts>
         <div class="space-y-6">
-            <!-- Header -->
-            <div class="flex items-center justify-between">
-                <div>
-                    <h1 class="text-3xl font-bold text-gray-800">Categories</h1>
-                    <p class="text-gray-500 mt-1">Organize your content with categories</p>
-                </div>
-                <button
-                    class="px-6 py-3 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl font-semibold shadow-md transition-transform active:scale-95 hover:shadow-lg">
-                    + New Category
-                </button>
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800">Categories</h1>
+                <p class="text-gray-500 mt-1">Organize your content with categories</p>
             </div>
+            <button
+                class="px-6 py-3 bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-xl font-semibold shadow-md transition-transform active:scale-95 hover:shadow-lg">
+                + New Category
+            </button>
+        </div>
 
-            <!-- Category Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Category Card 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -43,7 +39,6 @@
                     </div>
                 </div>
 
-                <!-- Category Card 2 -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -71,7 +66,6 @@
                     </div>
                 </div>
 
-                <!-- Category Card 3 -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -99,7 +93,6 @@
                     </div>
                 </div>
 
-                <!-- Category Card 4 -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -127,7 +120,6 @@
                     </div>
                 </div>
 
-                <!-- Category Card 5 -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -155,7 +147,6 @@
                     </div>
                 </div>
 
-                <!-- Category Card 6 -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-start justify-between mb-4">
@@ -183,7 +174,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </DashboardLayouts>
 </template>
 

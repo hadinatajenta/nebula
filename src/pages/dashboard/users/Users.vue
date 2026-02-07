@@ -103,7 +103,6 @@
 import DashboardLayouts from '../../../layouts/DashboardLayouts.vue';
 import { Plus, Search, Filter, Download, MoreHorizontal } from 'lucide-vue-next';
 
-// Mock Data
 const mockUsers = [
     { id: 1, name: 'John Doe', email: 'john@rosenebula.com', role: 'Admin', status: 'Active', lastActive: '2 mins ago' },
     { id: 2, name: 'Alice Smith', email: 'alice@rosenebula.com', role: 'Editor', status: 'Active', lastActive: '1 hr ago' },

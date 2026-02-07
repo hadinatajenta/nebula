@@ -92,7 +92,6 @@
                 </div>
             </div>
 
-            <!-- Mobile -->
             <div class="block md:hidden space-y-5">
                 <div v-for="(group, index) in groupedItineraries" :key="index" class="bg-white border rounded-xl p-4">
                     <p class="font-semibold mb-3">
@@ -123,7 +122,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Total -->
             <div class="block md:hidden mt-4 bg-white border rounded-xl p-4">
                 <div class="flex justify-between items-center">
                     <div>
@@ -136,7 +134,6 @@
         </div>
 
 
-        <!-- Modal -->
         <div v-if="showModal" class="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
             <div class="bg-white rounded-xl w-full max-w-md p-6">
                 <h2 class="font-semibold mb-4">Add Itinerary</h2>
@@ -385,7 +382,6 @@ const exportPdf = () => {
     let startY = 30
 
     groupedItineraries.value.forEach(group => {
-        // Date header
         doc.setFontSize(12)
         doc.text(formatDate(group.date), 14, startY)
         startY += 4
@@ -418,6 +414,10 @@ const exportPdf = () => {
 
 <style scoped>
 .input {
-    @apply w-full border rounded-lg p-2 text-sm;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
 }
 </style>

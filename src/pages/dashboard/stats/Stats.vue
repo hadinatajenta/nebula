@@ -1,13 +1,11 @@
 <template>
     <DashboardLayouts>
         <div class="space-y-6">
-            <!-- Header -->
             <div>
                 <h1 class="text-3xl font-bold text-gray-800">Statistics</h1>
                 <p class="text-gray-500 mt-1">Analytics and insights for your content</p>
             </div>
 
-            <!-- Key Metrics -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
@@ -76,9 +74,7 @@
                 </div>
             </div>
 
-            <!-- Charts Section -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <!-- Views Chart -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
                     <h2 class="text-xl font-semibold text-gray-800 mb-6">Views Over Time</h2>
                     <div class="h-64 flex items-end justify-between gap-2">
@@ -115,7 +111,6 @@
                     </div>
                 </div>
 
-                <!-- Top Posts -->
                 <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
                     <h2 class="text-xl font-semibold text-gray-800 mb-6">Top Performing Posts</h2>
                     <div class="space-y-4">

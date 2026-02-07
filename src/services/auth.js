@@ -1,7 +1,6 @@
 import { gql } from 'graphql-tag'
 import apolloClient from './graphql'
 
-// GraphQL mutation for login
 export const LOGIN_MUTATION = gql`
     mutation Login($email: String!, $password: String!) {
         login(email: $email, password: $password) {
@@ -15,7 +14,6 @@ export const LOGIN_MUTATION = gql`
     }
 `
 
-// Login function
 export const login = async (email, password) => {
     try {
         const { data } = await apolloClient.mutate({
@@ -24,10 +22,7 @@ export const login = async (email, password) => {
         })
 
         if (data?.login?.token) {
-            // Store token in localStorage
             localStorage.setItem('token', data.login.token)
-
-            // Store user info
             localStorage.setItem('user', JSON.stringify(data.login.user))
 
             return {
@@ -48,19 +43,16 @@ export const login = async (email, password) => {
     }
 }
 
-// Logout function
 export const logout = () => {
     localStorage.removeItem('token')
     localStorage.removeItem('user')
     apolloClient.clearStore()
 }
 
-// Check if user is authenticated
 export const isAuthenticated = () => {
     return !!localStorage.getItem('token')
 }
 
-// Get current user
 export const getCurrentUser = () => {
     const userStr = localStorage.getItem('user')
     return userStr ? JSON.parse(userStr) : null

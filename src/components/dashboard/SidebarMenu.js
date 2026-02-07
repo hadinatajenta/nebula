@@ -26,7 +26,24 @@ export const sidebarMenu = [
         label: 'Users',
         to: '/dashboard/users',
         icon: 'Users',
-        badge: 3
+        badge: 3,
+        children: [
+            {
+                label: 'List Users',
+                to: '/dashboard/users/list',
+                icon: 'Users'
+            },
+            {
+                label: 'Users Activity',
+                to: '/dashboard/users/activity',
+                icon: 'Activity'
+            },
+            {
+                label: 'Import/Export',
+                to: '/dashboard/users/import-export',
+                icon: 'Upload'
+            }
+        ]
     },
     {
         label: 'Itinerary',

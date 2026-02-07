@@ -1,7 +1,6 @@
 <template>
     <DashboardLayouts>
         <div class="space-y-6">
-            <!-- Stats Overview -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
@@ -35,7 +34,6 @@
                     <div class="text-sm text-gray-500 font-medium">Draft Posts</div>
                 </div>
 
-                <!-- New Users -->
                 <div
                     class="bg-white p-6 rounded-2xl border border-gray-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1">
                     <div class="flex items-center justify-between mb-4">

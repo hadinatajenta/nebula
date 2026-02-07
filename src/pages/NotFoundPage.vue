@@ -1,7 +1,6 @@
 <template>
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#fefcf9] to-[#faf8f5] px-4">
         <div class="text-center max-w-lg mx-auto">
-            <!-- Glitch Text Effect Wrapper -->
             <div class="relative inline-block mb-8">
                 <h1
                     class="text-9xl font-black text-gray-900 tracking-tighter mix-blend-multiply opacity-20 absolute top-0 left-1 animate-pulse">
@@ -37,7 +36,6 @@
                 </div>
             </div>
 
-            <!-- Decorative Elements -->
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl max-h-3xl pointer-events-none opacity-50 z-0">
                 <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl animate-blob">
